@@ -1,0 +1,8 @@
+---
+- name: Install Viking
+  pacman: name=viking state=present
+
+- name: Install gpxpy
+  command: /usr/bin/aura -Ax --noconfirm --needed python-gpxpy
+  tags:
+    - aura

@@ -1,0 +1,13 @@
+---
+- name: Install Emacs
+  pacman: name=emacs state=present
+
+- name: Clone SpaceMacs Config
+  git: repo={{ https://github.com/syl20bnr/spacemacs }} dest=/home/{{ user.name }}/emacs.d
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Install user dotfiles
+  command: emacs --insecure
+  become: yes
+  become_user: "{{ user.name }}"

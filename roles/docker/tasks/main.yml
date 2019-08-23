@@ -1,0 +1,12 @@
+---
+- name: Install borg
+  pacman:
+    name:
+      - docker
+      - docker-machine
+      - docker-compose
+      - lxc
+      - python-docker
+    state: present
+    tags:
+      - docker

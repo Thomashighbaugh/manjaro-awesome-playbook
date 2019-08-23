@@ -1,0 +1,10 @@
+---
+- name: Install localtime
+  command: /usr/bin/aura -Ax --noconfirm --needed localtime-git user={{ user.name }}
+  tags:
+    - aura
+
+- include_tasks: roles/nmtrust/tasks/unit.yml
+  vars:
+      unit: localtime.service
+      run_on: "{{ localtime.run_on }}"

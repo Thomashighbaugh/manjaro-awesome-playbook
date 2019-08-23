@@ -1,0 +1,194 @@
+user:
+    name: tlh
+    uid: 1000
+    group: tlh
+    shell: /usr/bin/zsh
+    email: thighbaugh@zoho.com
+    log:
+        dir: log
+        rotate: 8
+
+
+dotfiles:
+    url: https://github.com/Thomashighbaugh/dotfiles.git
+
+ssh:
+    port: 22
+    user_key: /root/id_rsa
+    enable_sshd: True
+
+gnupg:
+    enable_agent: True
+    emulate_ssh: True
+
+network:
+    spoof_mac: True
+    conn_check:
+        interval: 0
+
+editors:
+    - vim
+    - emacs
+    - nano
+    - gedit
+    - gedit-plugins
+
+base_packages:
+    - base-devel
+    - pacman-contrib
+    - fwupd
+    - dmidecode
+    - tmux
+    - git
+    - kitty
+    - gcc
+    - snapd
+    - neofetch
+    - wget
+    - gtk-engines
+    - mkinitcpio
+    - manjaro-tools-base
+    - manjaro-tools-pkg
+    - manjaro-tools-iso
+    - manjaro-tools-iso
+    - rmlint
+    - lostfiles
+    - meson
+    - vim
+    - cmake
+    - pkgconfig
+    - libpeas
+    - xterm
+    - termite
+    - xorg-server
+    - packagekit
+    - yajl
+    - glances
+    - coreutils
+    - moreutils
+    - dateutils
+    - bc
+    - strace
+    - lsof
+    - sysstat
+    - python-keyring
+    - python-secretstorage
+    - tig
+    - ruby
+    - pv
+    - minicom
+    - jq
+    - screen
+    - python-pipenv
+    - termdown
+
+aura_packages:
+      - ctmg
+      - wpgtk-git
+      - xsettingsd-git
+
+
+
+filesystem_packages:
+    - dosfstools
+    - ntfs-3g
+    - exfat-utils
+    - fatresize
+    - udftools
+
+
+browser_choices:
+    - firefox-developer-edition
+    - firefox -P default
+    - firefox -P work
+    - firewarden chromium
+    - tor-browser-en
+    - "| xclip -selection c"
+
+
+passwordless_sudo:
+    - /usr/bin/openvpn*
+
+
+bootloader: grub
+
+fingerprint: False
+
+tor:
+    run_on: trusted
+
+localtime:
+    run_on: trusted
+
+unbound:
+    tls: True
+    nameservers:
+        - 1.1.1.1@853  # Cloudflare
+        - 9.9.9.9@853  # Quad9
+
+bluetooth:
+    disable: False
+
+firejail:
+    blacklist:
+        - ~/.calendars
+        - ~/.config/vdirsyncer
+        - ~/.contacts
+        - ~/.keys
+        - ~/.mbsyncrc
+        - ~/.offlineimap
+        - ~/.offlineimaprc
+        - ~/.password-store
+        - ~/.vdirsyncer
+        - ~/library
+
+journal:
+    max_size: 500M
+
+udisks:
+    auto_mount: False
+    shared_mount: True
+
+hostsctl:
+    url: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
+libinput:
+    middle_click_scroll: 12
+    button_mapping: "1 2 3 4 5 6 7 8 9 10 11 2"
+
+display_manager: lightdm
+base_fonts:
+    - cantarell-fonts
+    - gsfonts
+    - noto-fonts
+    - terminus-font
+    - tex-gyre-fonts
+    - ttf-caladea
+    - ttf-carlito
+    - ttf-dejavu
+    - ttf-droid
+    - ttf-inconsolata
+    - ttf-liberation
+    - ttf-opensans
+    - powerline-fonts
+    - awesome-terminal-fonts
+    - ttf-ubuntu-font-family
+aur_fonts:
+      - ttf-courier-prime
+      - ttf-heuristica
+      - ttf-merriweather
+      - ttf-merriweather-sans
+      - ttf-oswald
+      - ttf-quintessential
+      - ttf-signika
+      - ttf-symbola
+      - ttf-droid
+      - adobe-source-code-pro-fonts
+      - terminus-font
+      - ttf-inconsolata
+      - ttf-symbola
+
+units:
+    run_on: trusted
+
+kernel_parameters: "quiet consoleblank=60 i915.enable_psr=2"

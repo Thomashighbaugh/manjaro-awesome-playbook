@@ -1,0 +1,20 @@
+---
+- name: Install VirtualBox and dependencies
+  pacman:
+    name:
+      - net-tools
+      - virtualbox
+      - virtualbox-guest-iso
+      - virtualbox-host-dkms
+      - virt-manager
+    state: present
+
+- name: Install VirtualBox extensions
+  command: /usr/bin/aura -Ax --noconfirm --needed virtualbox-ext-oracle
+  tags:
+    - aura
+
+- name: Add the user to vboxusers group
+  user: name={{ user.name }} groups=vboxusers append=yes
+  tags:
+    - user
