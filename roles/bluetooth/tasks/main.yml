@@ -1,6 +1,6 @@
 ---
 - name: Install PulseAudio bluetooth with LDAC/aptX support
-  command: /usr/bin/aura -Ax --noconfirm --needed  libldac pulseaudio-modules-bt-git
+  command: /usr/bin/aura -Ax --noconfirm --needed  libldac
   tags:
     - aura
   notify:

@@ -41,7 +41,6 @@
     - { role: mapping, tags: ['mapping'] }
     - { role: sound, tags: ['sound'] }
     - { role: calibre, tags: ['calibre'] }
-    - { role: localtime, tags: ['localtime'], when: "localtime is defined" }
     - { role: bluetooth, tags: ['bluetooth'], when: "bluetooth is defined" }
     - { role: hostsctl, tags: ['hostsctl'], when: "hostsctl is defined" }
     - { role: units, tags: ['units'], when: "units is defined" }

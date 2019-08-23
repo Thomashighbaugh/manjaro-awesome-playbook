@@ -22,6 +22,3 @@
   command: /usr/bin/aura -Ax --noconfirm --needed pulseaudio-ctl
   tags:
     - aura
-
-- name: Push pamute
-  copy: src=pamute/pamute dest=/usr/local/bin/pamute mode=0755
