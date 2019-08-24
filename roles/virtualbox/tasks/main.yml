@@ -7,6 +7,9 @@
       - virtualbox-guest-iso
       - virtualbox-host-dkms
       - virt-manager
+      - virtglrenderer
+      - openvmtools
+
     state: present
 
 - name: Install VirtualBox extensions

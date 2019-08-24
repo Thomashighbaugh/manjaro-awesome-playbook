@@ -11,8 +11,8 @@
       - ranger
     state: present
 
-- name: Install Polo File Manager
-  command: sudo aura -Ax --needed --noconfirm polo-bin
+- name: Install Sunflower FM
+  command: sudo aura -Ax --needed --noconfirm sunflower
 
 - name: Install Disk Utilities
   pacman:
@@ -25,6 +25,7 @@
       - rclone
       - mediainfo
       - pngcrush
+      - mutagen
 
 
 
