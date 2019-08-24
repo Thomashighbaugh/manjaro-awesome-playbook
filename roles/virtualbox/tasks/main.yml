@@ -9,6 +9,8 @@
       - virt-manager
       - virtglrenderer
       - openvmtools
+      - tigervnc
+      - virtualbox-ext-vnc
 
     state: present
 
@@ -22,8 +24,3 @@
   tags:
     - user
 
-- name: Install Kimchi
-  command: sudo aura -Ax --needed --noconfirm kimchi
-
-- name: Install Barrier
-  command: sudo aura -Ax --needed --noconfirm barrier
