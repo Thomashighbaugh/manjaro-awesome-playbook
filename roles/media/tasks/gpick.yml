@@ -1,0 +1,7 @@
+---
+- name: Install GPick
+  pacman:
+    name: gpick
+    state: present
+  tags:
+    - media

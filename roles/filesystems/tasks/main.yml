@@ -1,7 +1,7 @@
 ---
 - name: Install filesystem packages
   pacman:
-    name: "{{ filesystem_packages }}"
+    name: "{{ packages.filesystem_packages }}"
     state: present
 
 - name: Install File Managers

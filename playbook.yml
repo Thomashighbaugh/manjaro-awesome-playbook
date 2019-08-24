@@ -5,6 +5,7 @@
   roles:
     - { role: base, tags: ['base'] }
     - { role: aura, tags: ['aura'] }
+    - { role: terminals, tags: ['terminals'] }
     - { role: gnupg, tags: ['gnupg'] }
     - { role: microcode, tags: ['microcode'], when: "'GenuineIntel' in ansible_processor" }
     - { role: ssh, tags: ['ssh'] }
@@ -43,7 +44,6 @@
     - { role: calibre, tags: ['calibre'] }
     - { role: bluetooth, tags: ['bluetooth'], when: "bluetooth is defined" }
     - { role: hostsctl, tags: ['hostsctl'], when: "hostsctl is defined" }
-    - { role: units, tags: ['units'], when: "units is defined" }
     - { role: logitech, tags: ['logitech'] }
     - { role: vim, tags: ['vim'] }
     - { role: spacemacs, tags: ['spacemacs'] }
@@ -51,4 +51,4 @@
     - { role: menus, tags: ['menus'] }
   vars_prompt:
     - name: user_password
-      prompt: "Enter desired user password"
+      prompt: "Enter Password for User Configured During Install"

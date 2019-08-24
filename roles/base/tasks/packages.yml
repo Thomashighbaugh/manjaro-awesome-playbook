@@ -1,8 +1,36 @@
 ---
-- name: Install universal base packages
+- name: Install Base packages
   pacman:
-      name: "{{ base_packages }}"
+      name: "{{ packages.base_packages }}"
       state: present
+  tags:
+    - packages
+
+- name: Install Packaging && File Utilities
+  pacman:
+    name: "{{ packages.packaging_tools }}"
+    state: present
+  tags:
+    - packages
+
+- name: Install Python Libraries
+  pacman:
+    name: "{{ packages.python_libraries }}"
+    state: present
+  tags:
+    - packages
+
+- name: Install System Monitoring Tools
+  pacman:
+    name: "{{ packages.system_monitoring }}"
+    state: present
+  tags:
+    - packages
+
+- name: Install Manjaro ISO Tools
+  pacman:
+    name: "{{ packages.manjaro_packages }}"
+    state: present
   tags:
     - packages
 

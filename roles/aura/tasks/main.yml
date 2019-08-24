@@ -7,6 +7,14 @@
     - aura
     - packages
 
+- name: Install Go
+  pacman:
+    name: go
+    state: present
+  tags:
+      - aura
+      - packages
+
 - name: Install Aura
   command: /usr/bin/yay -S --noconfirm aura-bin
   become: yes
@@ -17,7 +25,7 @@
 
 - name: Install AUR packages
   command: /usr/bin/aura -Ax --noconfirm --needed {{item}}
-  with_items: "{{aura_packages}}"
+  with_items: "{{ packages.aura_packages }}"
   tags:
     - aura
     - packages

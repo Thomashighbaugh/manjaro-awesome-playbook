@@ -32,69 +32,75 @@ editors:
     - nano
     - gedit
     - gedit-plugins
+packages:
+    base_packages:
+        - base-devel
+        - pacman-contrib
+        - fwupd
+        - dmidecode
+        - neofetch
+        - wget
+        - mkinitcpio
+        - coreutils
+        - moreutils
+        - dateutils
+        - bc
+        - ruby
+        - screen
 
-base_packages:
-    - base-devel
-    - pacman-contrib
-    - fwupd
-    - dmidecode
-    - tmux
-    - git
-    - kitty
-    - gcc
-    - snapd
-    - neofetch
-    - wget
-    - gtk-engines
-    - mkinitcpio
-    - manjaro-tools-base
-    - manjaro-tools-pkg
-    - manjaro-tools-iso
-    - manjaro-tools-iso
-    - rmlint
-    - lostfiles
-    - meson
-    - vim
-    - cmake
-    - pkgconfig
-    - libpeas
-    - xterm
-    - termite
-    - xorg-server
-    - packagekit
-    - yajl
-    - glances
-    - coreutils
-    - moreutils
-    - dateutils
-    - bc
-    - strace
-    - lsof
-    - sysstat
-    - python-keyring
-    - python-secretstorage
-    - tig
-    - ruby
-    - pv
-    - minicom
-    - jq
-    - screen
-    - python-pipenv
-    - termdown
+    packaging_tools:
+          - packagekit
+          - pkgconfig
+          - snapd
+          - yajl
+          - rmlint
+          - lostfiles
+          - cmake
+          - meson
 
-aura_packages:
-      - ctmg
-      - wpgtk-git
-      - xsettingsd-git
+    python_libraries:
+          - python-keyring
+          - python-secretstorage
+          - python-pipenv
 
+    system_monitoring:
+          - strace
+          - lsof
+          - sysstat
+          - pv
+          - jq
+          - libpeas
+          - xorg-server
+          - glances
 
+    aura_packages:
+          - ctmg
+          - wpgtk-git
+          - xsettingsd-git
+          - dotbro
 
-filesystem_packages:
-    - dosfstools
-    - ntfs-3g
-    - exfat-utils
-    - fatresize
-    - udftools
+    manjaro_packages:
+          - manjaro-tools-base
+          - manjaro-tools-pkg
+          - manjaro-tools-iso
+          - manjaro-tools-iso
+
+    filesystem_packages:
+        - dosfstools
+        - ntfs-3g
+        - exfat-utils
+        - fatresize
+        - udftools
+
+    codecs
+        - flac
+        - lame
+        - gst-libav
+        - gst-plugins-good
+        - exiv2
+        - perl-image-exiftool
+        - opus-tools
+
 
 
 browser_choices:
@@ -114,8 +120,6 @@ bootloader: grub
 
 fingerprint: False
 
-tor:
-    run_on: trusted
 
 localtime:
     run_on: trusted
@@ -157,36 +161,6 @@ libinput:
     button_mapping: "1 2 3 4 5 6 7 8 9 10 11 2"
 
 display_manager: lightdm
-base_fonts:
-    - cantarell-fonts
-    - gsfonts
-    - noto-fonts
-    - terminus-font
-    - tex-gyre-fonts
-    - ttf-caladea
-    - ttf-carlito
-    - ttf-dejavu
-    - ttf-droid
-    - ttf-inconsolata
-    - ttf-liberation
-    - ttf-opensans
-    - powerline-fonts
-    - awesome-terminal-fonts
-    - ttf-ubuntu-font-family
-aur_fonts:
-      - ttf-courier-prime
-      - ttf-heuristica
-      - ttf-merriweather
-      - ttf-merriweather-sans
-      - ttf-oswald
-      - ttf-quintessential
-      - ttf-signika
-      - ttf-symbola
-      - ttf-droid
-      - adobe-source-code-pro-fonts
-      - terminus-font
-      - ttf-inconsolata
-      - ttf-symbola
 
 units:
     run_on: trusted

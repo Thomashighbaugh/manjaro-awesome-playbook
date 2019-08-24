@@ -1,0 +1,5 @@
+---
+- name: Install Engines
+  pacman:
+    name:
+      - gtk-engines

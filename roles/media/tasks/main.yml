@@ -1,7 +1,6 @@
 ---
 - include: abcde.yml
 - include: imagemagick.yml
-- include: inkscape.yml
 - include: gimp.yml
 - include: gthumb.yml
 - include: feh.yml
@@ -13,14 +12,7 @@
 
 - name: Install misc media codecs and helpers
   pacman:
-    name:
-      - flac
-      - lame
-      - gst-libav
-      - gst-plugins-good
-      - exiv2
-      - perl-image-exiftool
-      - opus-tools
+    name: "{{ packages.codecs ]}"
     state: present
 
 - name: Install Metadata Anonymisation Toolkit
