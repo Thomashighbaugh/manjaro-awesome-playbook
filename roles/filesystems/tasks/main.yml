@@ -23,7 +23,7 @@
       - gparted
       - rsync
       - rclone
-      -
+      - mediainfo
 
 
 
