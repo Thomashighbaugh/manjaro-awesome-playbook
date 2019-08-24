@@ -32,6 +32,8 @@ editors:
     - nano
     - gedit
     - gedit-plugins
+    - atom
+
 packages:
     base_packages:
         - base-devel
@@ -92,7 +94,7 @@ packages:
         - fatresize
         - udftools
 
-    codecs
+    codecs:
         - flac
         - lame
         - gst-libav
@@ -155,6 +157,9 @@ udisks:
 
 hostsctl:
     url: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
+spacemacs:
+    url: https://github.com/syl20bnr/spacemacs
 
 libinput:
     middle_click_scroll: 12

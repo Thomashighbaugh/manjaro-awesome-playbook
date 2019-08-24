@@ -9,10 +9,12 @@
 - include: qcode.yml
 - include: coulr.yml
 - include: oomox.yml
+- include: gpick.yml
+
 
 - name: Install misc media codecs and helpers
   pacman:
-    name: "{{ packages.codecs ]}"
+    name: "{{ packages.codecs }}"
     state: present
 
 - name: Install Metadata Anonymisation Toolkit

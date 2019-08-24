@@ -3,3 +3,5 @@
   pacman:
     name: "{{ editors }}"
     state: present
+
+- include: jetbrains.yml

@@ -34,7 +34,6 @@
     - { role: screensaver, tags: ['screensaver'] }
     - { role: cups, tags: ['cups'] }
     - { role: pdf, tags: ['pdf'] }
-    - { role: dictd, tags: ['dictd'] }
     - { role: virtualbox, tags: ['virtualbox'] }
     - { role: hashicorp, tags: ['hashicorp'] }
     - { role: virtualenv, tags: ['virtualenv'] }

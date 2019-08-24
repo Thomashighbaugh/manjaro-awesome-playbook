@@ -3,7 +3,7 @@
   pacman: name=emacs state=present
 
 - name: Clone SpaceMacs Config
-  git: repo={{ https://github.com/syl20bnr/spacemacs }} dest=/home/{{ user.name }}/emacs.d
+  git: repo="{{ spacemacs.url }}" dest=/home/{{ user.name }}/emacs.d
   become: yes
   become_user: "{{ user.name }}"
 

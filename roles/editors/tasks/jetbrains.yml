@@ -1,0 +1,37 @@
+---
+- name: Install Jetbrains Toolbox
+  command: /usr/bin/aura -Ax --noconfirm --needed jetbrains-toolbox
+  tags:
+    - aura
+    - jetbrains
+
+- name: Install Webstorm
+  command: /usr/bin/aura -Ax --noconfirm --needed webstorm
+  tags:
+    - aura
+    - jetbrains
+
+- name: Install PHPStorm
+  command: /usr/bin/aura -Ax --noconfirm --needed phpstorm
+  tags:
+    - aura
+    - jetbrains
+
+- name: Install PyCharm
+  command: /usr/bin/aura -Ax --noconfirm --needed pycharm-professional
+  tags:
+    - aura
+    - jetbrains
+
+
+- name: Install CLion
+  command: /usr/bin/aura -Ax --noconfirm --needed clion
+  tags:
+    - aura
+    - jetbrains
+
+- name: Install Android Studio
+  command: /usr/bin/aura -Ax --noconfirm --needed android-studio
+  tags:
+    - aura
+    - jetbrains
