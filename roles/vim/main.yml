@@ -11,6 +11,7 @@
 
 - name: Install Awesome version of ultimate vimrc for {{ user }}
   shell: sh ~{{ user }}/.vim_runtime/install_awesome_vimrc.sh
+  become: yes
   become_user: "{{ user.name }}"
   tags:
     - vim
