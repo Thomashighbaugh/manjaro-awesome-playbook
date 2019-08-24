@@ -45,7 +45,6 @@
     - { role: hostsctl, tags: ['hostsctl'], when: "hostsctl is defined" }
     - { role: logitech, tags: ['logitech'] }
     - { role: vim, tags: ['vim'] }
-    - { role: spacemacs, tags: ['spacemacs'] }
     - { role: docker, tags: ['docker'] }
     - { role: menus, tags: ['menus'] }
   vars_prompt:

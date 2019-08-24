@@ -8,11 +8,11 @@
   pacman:
     name:
       - doublecmd-qt5
-      - thunar-volman-gtk3
-      - thunar
-      - thunar-archive-plugin-gtk3
       - ranger
     state: present
+
+- name: Install Polo File Manager
+  command: sudo aura -Ax --needed --noconfirm polo-bin
 
 - name: Install Disk Utilities
   pacman:
@@ -22,6 +22,8 @@
       - gnome-disk-utility
       - gparted
       - rsync
+      - rclone
+      -
 
 
 

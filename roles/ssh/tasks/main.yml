@@ -5,6 +5,9 @@
 - name: Push OpenSSH daemon configuration file
   template: src=sshd_config.j2 dest=/etc/ssh/sshd_config
 
+- name: Push OpenSSH configuration file
+  template: src=ssh_config.j2 dest=/etc/ssh/ssh_config
+
 - name: Create OpenSSH systemd unit file directory
   file: path=/etc/systemd/system/sshd.socket.d state=directory
 
