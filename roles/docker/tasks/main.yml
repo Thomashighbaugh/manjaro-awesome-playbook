@@ -8,7 +8,7 @@
       - lxc
       - python-docker
     state: present
-    tags:
+  tags:
       - docker
 
 - name: Enable and start Docker service
