@@ -5,6 +5,7 @@
       - zip
       - unzip
       - p7zip
+      - lzop
     state: present
   tags:
     - zip
