@@ -1,6 +1,8 @@
 ---
 - name: Install Emacs
-  pacman: name=emacs state=present
+  pacman:
+   name: emacs
+   state: present
 
 - name: Clone SpaceMacs Config
   git: repo="{{ spacemacs.url }}" dest=/home/{{ user.name }}/emacs.d
