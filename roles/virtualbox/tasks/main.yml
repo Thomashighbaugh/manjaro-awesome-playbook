@@ -7,7 +7,6 @@
       - virtualbox-guest-iso
       - virtualbox-host-dkms
       - virt-manager
-      - openvmtools
       - tigervnc
       - virtualbox-ext-vnc
 
