@@ -13,14 +13,6 @@
   tags:
     - gimp
 
-- name: Jail GIMP
-  file: src=/usr/bin/firejail
-        dest=/usr/local/bin/gimp
-        state=link
-  tags:
-    - gimp
-    - firejail
-
 - name: Install GIMP raw support
   pacman: name=gimp-nufraw state=present
   tags:
