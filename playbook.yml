@@ -11,7 +11,6 @@
     - { role: ssh, tags: ['ssh'] }
     - { role: dotfiles, tags: ['dotfiles'] }
     - { role: ssd, tags: ['ssd'] }
-    - { role: x, tags: ['x'] }
     - { role: lightdm, tags: ['lightdm'], when: "display_manager == 'lightdm'" }
     - { role: pass, tags: ['pass'] }
     - { role: nettools, tags: ['nettools'] }
@@ -42,6 +41,7 @@
     - { role: logitech, tags: ['logitech'] }
     - { role: vim, tags: ['vim'] }
     - { role: fonts, tags: ['fonts'] }
+    - { role: x, tags: ['x'] }
     - { role: docker, tags: ['docker'] }
     - { role: menus, tags: ['menus'] }
   vars_prompt:
