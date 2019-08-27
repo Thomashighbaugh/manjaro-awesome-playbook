@@ -7,7 +7,7 @@
 - name: Install ROFI
   pacman:
     name: rofi
-    state: presemt
+    state: present
 
 
 
