@@ -4,6 +4,10 @@
 - include: menulibre.yml
 - include: polybar.yml
 
+- name: Install ROFI
+  pacman:
+    name: rofi
+    state: presemt
 
 
 

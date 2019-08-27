@@ -1,4 +1,7 @@
 ---
+- name: Install Tar
+   pacman: tar
+
 - name: Install freetype2
   pacman: name=freetype2 state=present
 
