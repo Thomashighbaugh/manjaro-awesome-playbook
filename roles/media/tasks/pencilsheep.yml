@@ -1,0 +1,5 @@
+- name: Install PencilSheep
+  command: sudo snap install pencilsheep
+  tags:
+    - media
+    - snap
