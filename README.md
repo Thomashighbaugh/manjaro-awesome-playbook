@@ -80,7 +80,10 @@ for a better debugging experience in general.
 
 <!-- GETTING STARTED -->
 ## Getting Started
-To use this playbook, it is advised that you begin with a freshly installed Manjaro Awesome WM system, which is what it is tested against. At minimum, an operating system that has pacman as its package manager is needed to take advantage of this playbook and due to the idempotent (aka can install on top of existing systems) nature of Ansible it _should not_ destroy your OS. 
+To use this playbook, it is advised that you begin with a freshly installed Manjaro Awesome WM system, 
+which is what it is tested against. At minimum, an operating system that has pacman as its package 
+manager is needed to take advantage of this playbook and due to the idempotent (aka can install 
+on top of existing systems) nature of Ansible it _should not_ destroy your OS. 
 ### Prerequisites
 
 ```sh
@@ -122,8 +125,7 @@ Distributed under the MIT License. Feel free to use it at your own risk and for 
 * [Ansible](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Ansible Module for Pacman](https://shields.io)
 * [Ansible AUR Module](https://choosealicense.com)
-* [Spark Playbook](https://pages.github.com)
-* [Manjaro i3 Module](https://daneden.github.io/animate.css)
+* [Spark Playbook](https://github.com/pigmonkey/spark)
 * [Best README Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
 
 

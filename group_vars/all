@@ -74,6 +74,7 @@ packages:
           - libpeas
           - xorg-server
           - glances
+          - lm_sensors
 
     aura_packages:
           - ctmg
