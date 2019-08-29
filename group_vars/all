@@ -48,6 +48,7 @@ packages:
         - dateutils
         - bc
         - ruby
+        - xdotool
         - screen
 
     packaging_tools:

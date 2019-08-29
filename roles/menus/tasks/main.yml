@@ -3,11 +3,12 @@
 - include: lemonbar.yml
 - include: menulibre.yml
 - include: polybar.yml
+- include: altTab.yml
 
 - name: Install ROFI
   pacman:
     name: rofi
-    state: presemt
+    state: present
 
 
 
