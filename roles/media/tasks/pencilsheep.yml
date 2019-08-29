@@ -1,0 +1,5 @@
+---
+- name: Install PencilSheep
+  command: sudo snap install pencilsheep
+  become: yes
+  become_user: "{{user.name}}"

@@ -10,6 +10,7 @@
 - include: coulr.yml
 - include: oomox.yml
 - include: gpick.yml
+- include: pencilsheep.yml
 
 
 - name: Install misc media codecs and helpers
