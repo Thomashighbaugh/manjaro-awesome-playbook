@@ -109,9 +109,7 @@ browser_choices:
     - firefox-developer-edition
     - firefox -P default
     - firefox -P work
-    - firewarden chromium
-    - tor-browser-en
-    - "| xclip -selection c"
+    - chromium
 
 
 passwordless_sudo:

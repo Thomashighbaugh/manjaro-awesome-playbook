@@ -1,5 +1,5 @@
 ---
-- name: Install borg
+- name: Install Borg
   pacman:
     name:
       - python-llfuse

@@ -32,6 +32,11 @@
   tags:
     - firefox-developer-edition
 
+- name: Install Basilisk
+  command: /usr/bin/aura -Ax --noconfirm --needed basilisk-bin
+  tags:
+    - aura
+
 - name: Install surfraw
   pacman:
     name: surfraw
