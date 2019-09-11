@@ -5,3 +5,8 @@
       - python-llfuse
       - borg
     state: present
+
+- name: Install Vorta
+  command: /usr/bin/aura -Ax --noconfirm --needed vorta
+  tags:
+    - aura
