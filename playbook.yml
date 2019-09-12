@@ -45,6 +45,8 @@
     - { role: docker, tags: ['docker'] }
     - { role: menus, tags: ['menus'] }
     - { role: nvm, tags: ['nvm'] }
+    - - { role: writing-snaps, tags: [' '] }
+
   vars_prompt:
     - name: user_password
       prompt: "Enter Password for User Configured During Install"
