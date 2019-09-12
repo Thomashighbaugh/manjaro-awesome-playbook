@@ -1,0 +1,22 @@
+---
+- name: Install Overleaf Desktop
+  snap:
+    name: overleaf
+
+- name: Install Start & Doc
+  snap:
+    name: start-and-doc
+
+- name: Install Taskbook
+  snap:
+    name: taskbook
+
+- name: Install Gisto
+  snap:
+    name: gisto
+
+
+- name: Install Gisto
+  snap:
+    name: gisto
+
