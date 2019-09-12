@@ -1,0 +1,4 @@
+---
+- name: Install Taskbook
+  snap:
+    name: taskbook

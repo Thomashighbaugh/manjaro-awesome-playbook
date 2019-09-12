@@ -1,0 +1,10 @@
+---
+- name: Install Snapd
+  pacman:
+    name: snapd
+    state: present
+
+
+- include: start-doc.yml
+- include: overleaf.yml
+- include: taskbook.yml

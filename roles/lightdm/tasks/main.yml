@@ -13,7 +13,7 @@
   file: path=/usr/share/backgrounds state=directory
 
 - name: Push LightDM greeter background
-  copy: src=onosendai.jpg dest=/usr/share/backgrounds/onosendai.jpg
+  copy: src=onosendai.jpg dest=/usr/share/backgrounds/vice.png
 
   #- name: Specify LightDM greeter background
   #  lineinfile: dest=/etc/lightdm/lightdm-gtk-greeter.conf
