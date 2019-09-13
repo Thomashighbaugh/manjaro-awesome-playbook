@@ -21,4 +21,3 @@
 - include: sudo.yml
 - include: packages.yml
 - include: journal.yml
-- include: snapd.yml

@@ -2,6 +2,7 @@
 - name: Manjaro Awesome Workstation Playbook
   hosts: localhost
   become: yes
+  # gather_facts: no
   roles:
     - { role: base, tags: ['base'] }
     - { role: aura, tags: ['aura'] }
@@ -43,9 +44,10 @@
     - { role: fonts, tags: ['fonts'] }
     - { role: x, tags: ['x'] }
     - { role: docker, tags: ['docker'] }
+    - { role: virt-manager, tags: ['virtualbox'] }
     - { role: menus, tags: ['menus'] }
     - { role: nvm, tags: ['nvm'] }
-    - - { role: writing-snaps, tags: [' '] }
+    - { role: writing-snaps, tags: [' '] }
 
   vars_prompt:
     - name: user_password

@@ -1,9 +1,10 @@
 ---
-- name: Install Borg
+- name: Install Borg && RClone
   pacman:
     name:
       - python-llfuse
       - borg
+      - rclone
     state: present
 
 - name: Install Vorta
