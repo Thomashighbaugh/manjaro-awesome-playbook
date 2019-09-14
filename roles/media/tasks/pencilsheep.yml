@@ -1,4 +1,15 @@
 ---
+- name: Install Snapd
+  pacman:
+    name: snapd
+    state: present
+
+- name: Enable and start Snapd Package Manager
+  service:
+    name: snapd.service
+    enabled: yes
+    state: started
+
 - name: Install PencilSheep
   command: sudo snap install pencilsheep
   become: yes
