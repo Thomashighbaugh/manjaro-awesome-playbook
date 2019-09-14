@@ -48,6 +48,7 @@
     - { role: menus, tags: ['menus'] }
     - { role: nvm, tags: ['nvm'] }
     - { role: writing-snaps, tags: [' '] }
+    - { role: vice-theme, tags: [' '] }
 
   vars_prompt:
     - name: user_password
