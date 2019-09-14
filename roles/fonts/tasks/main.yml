@@ -2,6 +2,13 @@
 - name: Install freetype2
   pacman: name=freetype2 state=present
 
+- name: Install Font Awesome 4
+  command: /usr/bin/aura -Ax --noconfirm --needed ttf-font-awesome-4
+  tags:
+    - aura
+    - mat
+
+
 - name: Install cairo
   pacman: name=cairo state=present
 
