@@ -16,6 +16,13 @@
   tags:
     - kernelparams
 
+- name: Enable and start Snapd Package Manager
+  service:
+    name: snapd.service
+    enabled: yes
+    state: started
+
+
 - include: shell.yml
 - include: user.yml
 - include: sudo.yml

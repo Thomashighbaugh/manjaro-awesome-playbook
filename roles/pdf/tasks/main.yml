@@ -5,7 +5,10 @@
     state: present
   tags:
     - okular
+
 - name: Install Zathura
   pacman:
     name: zathura
     state: present
+
+

@@ -9,8 +9,3 @@
     name: "user@{{ user.uid }}"
     state: stopped
 
-- name: Enable and start Snapd Package Manager
-  service:
-    name: snapd.service
-    enabled: yes
-    state: started

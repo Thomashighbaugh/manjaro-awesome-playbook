@@ -19,10 +19,10 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Ansible_logo.svg/832px-Ansible_logo.svg.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h1 align="center">Manjaro Awesome WM Playbook</h1>
+  <h1 align="center">Manjaro Workstation Playbook</h1>
 
   <p align="center">
-My personal configurations of my Manjaro-AwesomeWM workstation
+My personal configurations of my Manjaro workstation, WM independent. 
     <br />
     <br />
     <br />
@@ -80,7 +80,7 @@ for a better debugging experience in general.
 
 <!-- GETTING STARTED -->
 ## Getting Started
-To use this playbook, it is advised that you begin with a freshly installed Manjaro Awesome WM system, which is what it is tested against. At minimum, an operating system that has pacman as its package manager is needed to take advantage of this playbook and due to the idempotent (aka can install on top of existing systems) nature of Ansible it _should not_ destroy your OS. 
+To use this playbook, it is advised that you begin with a freshly installed Manjaro system, which is what it is tested against using both AwesomeWM or i3 (depending on my mood when installing). At minimum, an operating system that has pacman as its package manager is needed to take advantage of this playbook and due to the idempotent (aka can install on top of existing systems) nature of Ansible it _should not_ destroy your OS. 
 ### Prerequisites
 
 ```sh
@@ -95,6 +95,7 @@ git clone https://github.com/Thomashighbaugh/
 
 ```sh
 # run the playbook from the directory 
+## Use sudo instead of running as su for single deployment of yay
 sudo ansible-playbook -i localhost playbook.yml
 
 ```
@@ -104,6 +105,11 @@ sudo ansible-playbook -i localhost playbook.yml
 This project can be used to provision your own system or as the basis for your own custom playbook to provision a system to your specific use case. 
 
 In addition, the tasks are modularized in such a way that individual tasks can easily be used as pieces of another playbook without more than adding them to the playbook.yml file you create. 
+
+### AUR Solution
+Due to AUR helpers not allowing themselves to be run as root, I have included a temporary solution until I have a crack at the AUR helper roles available or write a role for this purpose. My solution uses AURA, another AUR helper that allows itself to run as root. 
+
+Where AUR packages are needed, I call AURA as a shell command, which isn't the most elegant solution but until I have time to sort out the nightmare of AUR helpers and Ansible, it works. 
 
 <!-- ROADMAP -->
 ## Roadmap

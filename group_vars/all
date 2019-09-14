@@ -12,6 +12,9 @@ user:
 dotfiles:
     url: https://github.com/Thomashighbaugh/dotfiles.git
 
+vice:
+    url: https://github.com/Thomashighbaugh/Vice-Theme
+
 ssh:
     port: 22
     user_key: /root/id_rsa
