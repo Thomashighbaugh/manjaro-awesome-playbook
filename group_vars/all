@@ -42,6 +42,7 @@ packages:
         - pacman-contrib
         - fwupd
         - dmidecode
+        - xorg-xfd
         - neofetch
         - wget
         - mkinitcpio
