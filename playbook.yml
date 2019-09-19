@@ -49,6 +49,7 @@
     - { role: nvm, tags: ['nvm'] }
     - { role: writing-snaps, tags: [' '] }
     - { role: vice-theme, tags: [' '] }
+    - { role: bitwarden, tags: [' '] }
 
   vars_prompt:
     - name: user_password
