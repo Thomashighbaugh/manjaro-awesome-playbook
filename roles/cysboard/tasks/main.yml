@@ -1,0 +1,11 @@
+---
+- name: Install Cysboard
+  command: /usr/bin/aura -Ax --noconfirm --needed cysboard-git
+  tags:
+    - aura
+    - conky
+
+- name: Install Conky
+  pacman:
+    name: conky
+    state: present
