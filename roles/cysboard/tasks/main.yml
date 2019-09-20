@@ -1,11 +1,30 @@
 ---
-- name: Install Cysboard
-  command: /usr/bin/aura -Ax --noconfirm --needed cysboard-git
-  tags:
-    - aura
-    - conky
-
-- name: Install Conky
+- name: Install Dependencies
   pacman:
-    name: conky
+    name:
+      - cmake
+      - make
+      - automake
     state: present
+
+- name: Install When Changed
+  command: /usr/bin/aura -Ax when-changed-git
+
+- name: Install
+- name: Download Cysboard
+  git:
+    repo: https://github.com/mike168m/Cysboard
+    dest: /usr/share/cysboard
+    archive: /tmp/cysboard.zip
+
+- name: Create CysBoard Build Directory
+  file:
+    path: /usr/share/cysboard/build
+    state: directory
+    mode: 755
+
+- name: Prepare CysBoard Install
+  command: /usr/bincmake /usr/share/cysboard
+
+- name: Install CysBoard
+  command: /usr/bin/make /usr/share/cysboard
