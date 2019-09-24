@@ -1,0 +1,3 @@
+---
+- name: Install theSlate
+  command: /usr/share/aura -Ax --noconfirm --needed theslate
