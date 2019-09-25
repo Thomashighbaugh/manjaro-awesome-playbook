@@ -9,4 +9,6 @@
 - include: zed.yml
 - include: lighttable.yml
 - include: wikidpad.yml
-
+- include: cudatext.yml
+- include: zettlr.yml
+- include: texworks.yml
