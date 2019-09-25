@@ -15,6 +15,7 @@
   service:
     name: docker.service
     state: started
+
 - name: Enable Docker Service in Systemd
   systemd:
     name: docker
