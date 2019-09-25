@@ -1,4 +1,6 @@
 ---
 - name: Install Cudatext
     command: /usr/bin/aura -Ax --noconfirm --needed cudatext
+- name: Install Cudatext
+    command: /usr/bin/aura -Ax --noconfirm --needed texworks
 

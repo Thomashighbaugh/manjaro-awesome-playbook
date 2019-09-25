@@ -38,7 +38,11 @@ editors:
     - gummi
     - texstudio
     - zim
-
+    - texlive-most
+    - lyx
+    - gnome-latex
+    - gummi
+    - texmaker
 
 packages:
     base_packages:
