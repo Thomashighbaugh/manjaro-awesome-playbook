@@ -15,6 +15,11 @@
   service:
     name: docker.service
     state: started
+- name: Enable Docker Service in Systemd
+  systemd:
+    name: docker
+    state: started
+    enabled: yes
 
 - name: Add User to Docker Group
   user:
