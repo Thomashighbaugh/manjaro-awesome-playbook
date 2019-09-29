@@ -23,6 +23,11 @@
 - name: Install xautomation
   pacman: name=xautomation state=present
 
+- name: Install xdmx
+  pacman: name=xorg-server-xdmx state=present
+- name: Install xnest
+  pacman: name=xorg-server-xnest state=present
+
 
 - name: Add user to video group
   user: name={{ user.name }} groups=video append=yes
@@ -35,11 +40,6 @@
   tags:
     - libinput
 
-- name: Remap mouse buttons
-  template: src=30-button_mapping.conf dest=/etc/X11/xorg.conf.d/30-button_mapping.conf
-  when: libinput.button_mapping is defined
-  tags:
-    - libinput
 
 - include: sxhkd.yml
 - include: unclutter.yml

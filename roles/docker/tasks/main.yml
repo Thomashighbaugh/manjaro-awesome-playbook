@@ -28,5 +28,3 @@
     groups: docker
     append: yes
 
-- name: Install Kitematic
-  command: /usr/bin/aura -Ax --needed --noconfirm kitematic

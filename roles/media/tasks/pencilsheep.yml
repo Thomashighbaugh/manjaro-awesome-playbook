@@ -10,6 +10,9 @@
     enabled: yes
     state: started
 
+- name: Seed Snapd
+  command: /usr/bin/snap refresh
+
 - name: Install PencilSheep
   command: sudo snap install pencilsheep
   become: yes
