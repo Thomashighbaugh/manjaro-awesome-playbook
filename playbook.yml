@@ -47,6 +47,7 @@
     - { role: vmware, tags: [' '] }
     - { role: golang, tags: [' '] }
     - { role: gnome-keyring, tags: [' '] }
+    - { role: android-messager, tags: [' '] }
 
   vars_prompt:
     - name: user_password
