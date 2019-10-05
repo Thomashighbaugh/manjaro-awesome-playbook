@@ -17,7 +17,6 @@
     - { role: nettools, tags: ['nettools'] }
     - { role: networkmanager, tags: ['networkmanager'] }
     - { role: ntp, tags: ['ntp'] }
-    - { role: unbound, tags: ['unbound'] }
     - { role: editors, tags: ['editors'] }
     - { role: filesystems, tags: ['filesystems'] }
     - { role: archive, tags: ['archive'] }
@@ -27,15 +26,11 @@
     - { role: media, tags: ['media'] }
     - { role: mpd, tags: ['mpd'] }
     - { role: mpv, tags: ['mpv'] }
-    - { role: pianobar, tags: ['pianobar'] }
-    - { role: screensaver, tags: ['screensaver'] }
-    - { role: cups, tags: ['cups'] }
     - { role: pdf, tags: ['pdf'] }
     - { role: virtualbox, tags: ['virtualbox'] }
     - { role: hashicorp, tags: ['hashicorp'] }
     - { role: virtualenv, tags: ['virtualenv'] }
     - { role: borg, tags: ['borg'] }
-    - { role: mapping, tags: ['mapping'] }
     - { role: sound, tags: ['sound'] }
     - { role: bluetooth, tags: ['bluetooth'], when: "bluetooth is defined" }
     - { role: hostsctl, tags: ['hostsctl'], when: "hostsctl is defined" }
@@ -48,8 +43,10 @@
     - { role: menus, tags: ['menus'] }
     - { role: nvm, tags: ['nvm'] }
     - { role: writing-snaps, tags: [' '] }
-    - { role: vice-theme, tags: [' '] }
     - { role: bitwarden, tags: [' '] }
+    - { role: vmware, tags: [' '] }
+    - { role: golang, tags: [' '] }
+    - { role: gnome-keyring, tags: [' '] }
 
   vars_prompt:
     - name: user_password

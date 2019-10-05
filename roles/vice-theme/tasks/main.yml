@@ -1,6 +1,0 @@
----
-- name: Clone Vice Theme from Github
-  git: repo={{ vice.url }} dest=/home/{{ user.name }}/Vice-Theme
-  when: vice is defined
-  become: yes
-  become_user: "{{ user.name }}"
