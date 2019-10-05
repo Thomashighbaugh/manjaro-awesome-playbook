@@ -4,13 +4,13 @@
   become: yes
   # gather_facts: no
   roles:
+    - { role: dotfiles, tags: ['dotfiles'] }
     - { role: base, tags: ['base'] }
     - { role: aura, tags: ['aura'] }
     - { role: terminals, tags: ['terminals'] }
     - { role: gnupg, tags: ['gnupg'] }
     - { role: microcode, tags: ['microcode'], when: "'GenuineIntel' in ansible_processor" }
     - { role: ssh, tags: ['ssh'] }
-    - { role: dotfiles, tags: ['dotfiles'] }
     - { role: ssd, tags: ['ssd'] }
     - { role: lightdm, tags: ['lightdm'], when: "display_manager == 'lightdm'" }
     - { role: pass, tags: ['pass'] }
