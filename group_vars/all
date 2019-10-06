@@ -125,7 +125,7 @@ packages:
         - unrar
         - unzip
         - xz
-        - pcmanfm
+        - pcmanfm-gtk3
         - zip
         - zstd
         - flatpak
