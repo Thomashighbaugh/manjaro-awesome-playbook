@@ -42,12 +42,9 @@
     - { role: virt-manager, tags: ['virtualbox'] }
     - { role: menus, tags: ['menus'] }
     - { role: nvm, tags: ['nvm'] }
-    - { role: writing-snaps, tags: [' '] }
     - { role: bitwarden, tags: [' '] }
-    - { role: vmware, tags: [' '] }
     - { role: golang, tags: [' '] }
     - { role: gnome-keyring, tags: [' '] }
-    - { role: android-messager, tags: [' '] }
 
   vars_prompt:
     - name: user_password

@@ -1,6 +1,0 @@
----
-- name: Install Android Messager Desktop Client
-  command: /usr/bin/aura -Ax  android-messages-desktop
-  tags:
-    - android-messages
-    - aura

@@ -1,4 +1,0 @@
----
-- name: Install Start & Doc
-  snap:
-    name: start-and-doc
