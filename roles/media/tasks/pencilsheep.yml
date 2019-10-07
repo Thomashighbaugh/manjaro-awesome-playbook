@@ -1,0 +1,11 @@
+---
+- name: Install Snap Package Manager
+  pacman:
+    name: snapd
+    state: present
+- name: Start Snap service
+  service:
+    name: snapd.service
+    state: started
+
+- name: Install PencilSheep Using Snap Package Manager

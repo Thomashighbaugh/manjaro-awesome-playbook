@@ -35,7 +35,6 @@
     - { role: bluetooth, tags: ['bluetooth'], when: "bluetooth is defined" }
     - { role: hostsctl, tags: ['hostsctl'], when: "hostsctl is defined" }
     - { role: logitech, tags: ['logitech'] }
-    - { role: vim, tags: ['vim'] }
     - { role: fonts, tags: ['fonts'] }
     - { role: x, tags: ['x'] }
     - { role: docker, tags: ['docker'] }

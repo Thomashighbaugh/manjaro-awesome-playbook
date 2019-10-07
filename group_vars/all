@@ -33,15 +33,8 @@ editors:
     - vim
     - emacs
     - nano
-    - gedit
-    - gedit-plugins
-    - gummi
-    - texstudio
     - zim
-    - texlive-most
     - lyx
-    - gnome-latex
-    - gummi
     - texmaker
 
 packages:
@@ -93,9 +86,7 @@ packages:
 
     aura_packages:
           - ctmg
-          - wpgtk-git
           - xsettingsd-git
-          - dotbro
 
     manjaro_packages:
           - manjaro-tools-base
@@ -170,10 +161,10 @@ bluetooth:
     disable: False
 
 journal:
-    max_size: 500M
+    max_size: 50M
 
 udisks:
-    auto_mount: False
+    auto_mount: True
     shared_mount: True
 
 hostsctl:

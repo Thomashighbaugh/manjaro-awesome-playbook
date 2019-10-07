@@ -7,8 +7,6 @@
   tags:
     - aura
     - mat
-
-
 - name: Install cairo
   pacman: name=cairo state=present
 
