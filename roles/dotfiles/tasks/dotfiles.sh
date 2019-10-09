@@ -4,6 +4,6 @@ git clone https://github.com/Thomashighbaugh/dotfiles $HOME/dotfiles
 
 cd $HOME/dotfiles
 
-stow awesomewm
+stow awesomews
 
 cd $HOME
