@@ -5,15 +5,16 @@
 - name: Install mpc
   pacman: name=mpc state=present
 
-- name: Push mpd service file
-  copy: src=mpd.service dest=/etc/systemd/user/mpd.service
-  notify:
-    - reload systemd config
-  tags:
-    - firejail
 
 - name: Install mpc
   pacman: name=mpc state=present
 
 - name: Install ncmpcpp
   pacman: name=ncmpcpp state=present
+
+- name: Install Sonata
+  pacman: name=sonata state=present
+
+- name: Install LibMPD
+  pacman: name=libmpd state=present
+

@@ -73,6 +73,8 @@ packages:
           - python-keyring
           - python-secretstorage
           - python-pipenv
+          - python-mpd2
+          -
 
     system_monitoring:
           - strace
