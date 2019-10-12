@@ -4,6 +4,7 @@
     name:
       - lightdm
       - lightdm-gtk-greeter
+      - lightdm-gtk-greeter-settings
     state: present
 
 - name: Enable LightDM
@@ -21,11 +22,11 @@
              state=present
              line="background=/usr/share/backgrounds/vice.png"
 
-- name: Hide user images
-  lineinfile: dest=/etc/lightdm/lightdm-gtk-greeter.conf
-              regexp="^hide-user-image="
-              state=present
-              line="hide-user-image=true"
+#- name: Hide user images
+#  lineinfile: dest=/etc/lightdm/lightdm-gtk-greeter.conf
+#              regexp="^hide-user-image="
+#              state=present
+#              line="hide-user-image=true"
 
   #- name: Force LightDM greeter theme
   # lineinfile: dest=/usr/share/xgreeters/lightdm-gtk-greeter.desktop
