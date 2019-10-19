@@ -1,52 +1,109 @@
 ---
 - name: Install OpenVPN
-  pacman: name=openvpn state=present
-
+  pacman:
+   name: openvpn
+   state: present
+ tags:
+   - nettools
 - name: Install MTR
-  pacman: name=mtr state=present
+  pacman:
+   name: mtr
+   state: present
+ tags:
+   - nettools
 
 - name: Install net-tools
-  pacman: name=net-tools state=present
+  pacman:
+   name: net-tools
+   state: present
+ tags:
+   - nettools
 
 - name: Install bind-tools
-  pacman: name=bind-tools state=present
+  pacman:
+   name: bind-tools
+   state: present
+ tags:
+   - nettools
 
 - name: Install whois
-  pacman: name=whois state=present
+  pacman:
+   name: whois
+   state: present
+ tags:
+   - nettools
 
 - name: Install netcat
-  pacman: name=gnu-netcat state=present
+  pacman:
+   name: gnu-netcat
+   state: present
+ tags:
+   - nettools
 
 - name: Install lftp
-  pacman: name=lftp state=present
+  pacman:
+   name: lftp
+   state: present
+ tags:
+   - nettools
 
 - name: Install nmap
-  pacman: name=nmap state=present
+  pacman:
+   name: nmap
+   state: present
+ tags:
+   - nettools
 
 - name: Install tcpdump
-  pacman: name=tcpdump state=present
+  pacman:
+   name: tcpdump
+   state: present
+ tags:
+   - nettools
 
 - name: Install sshuttle
-  pacman: name=sshuttle state=present
+  pacman:
+   name: sshuttle
+   state: present
+ tags:
+   - nettools
 
 - name: Install pdsh
   command: /usr/bin/aura -Ax  --noconfirm --needed pdsh
   tags:
     - aura
+    - nettools
 
 - name: Install wireshark
-  pacman: name=wireshark-qt state=present
+  pacman:
+   name: wireshark-qt
+   state: present
+ tags:
+   - nettools
 
 - name: Add user to wireshark group
   user: name={{ user.name }} groups=wireshark append=yes
   tags:
     - user
+    - nettools
 
 - name: Install socat
-  pacman: name=socat state=present
+  pacman:
+   name: socat
+   state: present
+ tags:
+   - nettools
 
 - name: Install nethogs
-  pacman: name=nethogs state=present
+  pacman:
+   name: nethogs
+   state: present
+ tags:
+  - nettools
 
 - name: Install speedtest-cli
-  pacman: name=speedtest-cli state=present
+  pacman:
+   name: speedtest-cli
+   state: present
+ tags:
+   - nettools
