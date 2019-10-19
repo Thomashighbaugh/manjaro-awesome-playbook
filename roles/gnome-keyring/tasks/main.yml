@@ -21,4 +21,6 @@
    regexp: ^SystemGroup
    state: present
    line: "session    optional     pam_gnome_keyring.so auto_start"
+  tags:
+    - gnome-keyring
 
