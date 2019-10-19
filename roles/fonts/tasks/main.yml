@@ -1,17 +1,30 @@
 ---
 - name: Install freetype2
-  pacman: name=freetype2 state=present
+  pacman:
+   name: freetype2
+   state: present
+ tags:
+   - fonts
 
 - name: Install Font Awesome 4
   command: /usr/bin/aura -Ax --noconfirm --needed ttf-font-awesome-4
   tags:
     - aura
-    - mat
+    - fonts
+
 - name: Install cairo
-  pacman: name=cairo state=present
+  pacman:
+   name: cairo
+   state: present
+ tags:
+   - fonts
 
 - name: Install fontconfig
-  pacman: name=fontconfig state=present
+  pacman:
+   name: fontconfig
+   state: present
+ tags:
+   - fonts
 
 - name: Enable LCD filter
   file: src=/etc/fonts/conf.avail/11-lcdfilter-default.conf
