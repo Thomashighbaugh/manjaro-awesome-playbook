@@ -3,9 +3,16 @@
   command: /usr/bin/aura -Ax --noconfirm --needed hostsctl
   tags:
     - aur
+    - hostsctl
 
 - name: Push hostsctl config
-  template: src=hostsctl.conf.j2 dest=/etc/hostsctl.conf
+  template:
+   src: hostsctl.conf.j2
+   dest: /etc/hostsctl.conf
+ tags:
+   - hostsctl
 
 - name: Update hostsctl
   command: hostsctl update
+ tags:
+   - hostsctl

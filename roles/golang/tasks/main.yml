@@ -1,14 +1,29 @@
 ---
 - name: Install go
-  pacman: name=go state=present
+  pacman:
+   name: go
+   state: present
+  tags:
+    - golang
 
 - name: Create system go group
-  group: name=golang state=present
-
+  group:
+   name: golang
+   state: present
+ tags:
+   - golang
 - name: Add user to system golang group
-  user: name={{ user.name }} groups=golang append=yes
+  user:
+   name: "{{ user.name }}"
+   groups: golang
+   append: yes
   tags:
     - user
+    - golang
 
 - name: Create system go dir
-  file: path=/usr/local/go state=directory group=golang mode=0775
+  file:
+   path: /usr/local/go
+   state: directory
+   group: golang
+   mode: 0775

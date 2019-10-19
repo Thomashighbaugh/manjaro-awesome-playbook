@@ -3,23 +3,32 @@
   pacman:
     name: vagrant
     state: present
+ tags:
+   - hashicorp
 
 - name: Install consul
   pacman:
     name: consul
     state: present
+ tags:
+   - hashicorp
 
 - name: Install terraform
   pacman:
     name: terraform
     state: present
+ tags:
+   - hashicorp
 
 - name: Install vault
   pacman:
     name: vault
     state: present
+ tags:
+   - hashicorp
 
 - name: Install nomad
   command: /usr/bin/aura -Ax --noconfirm --needed nomad
   tags:
     - aura
+    - hashicorp

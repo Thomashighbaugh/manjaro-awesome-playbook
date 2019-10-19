@@ -3,6 +3,8 @@
   pacman:
     name: gnupg
     state: present
+  tags:
+    - gnupg
 
 - name: Enable gpg-agent.socket
   systemd:
@@ -15,6 +17,8 @@
   environment:
     XDG_RUNTIME_DIR: "/run/user/{{ user.uid }}"
   when: gnupg.enable_agent == True
+ tags:
+   - gnupog
 
 - name: Enable dirmngr.socket
   systemd:
@@ -27,6 +31,8 @@
   environment:
     XDG_RUNTIME_DIR: "/run/user/{{ user.uid }}"
   when: gnupg.enable_agent == True
+ tags:
+   - gnupg
 
 - name: Enable gpg-agent-ssh.socket
   systemd:
@@ -39,3 +45,5 @@
   environment:
     XDG_RUNTIME_DIR: "/run/user/{{ user.uid }}"
   when: gnupg.enable_agent == True and gnupg.emulate_ssh == True
+ tags:
+   - gnupg
