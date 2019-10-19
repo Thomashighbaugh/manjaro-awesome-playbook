@@ -40,3 +40,5 @@
     name: screen
     state: present
 
+- include: p10k.yml
+
