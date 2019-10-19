@@ -3,46 +3,55 @@
   pacman:
     name: w3m
     state: present
+  tags:
+    - browsers
 
 - name: Install Firefox
   pacman:
     name: firefox
     state: present
   tags:
-    - firefox
+    - browsers
 
 - name: Install Chromium
   pacman:
     name: chromium
     state: present
   tags:
-    - chromium
+    - browsers
 
 - name: Install Pepper Flash
   pacman:
     name: pepper-flash
     state: present
   tags:
-    - chromium
+    - browsers
 
 - name: Install firefox-developer-edition
   pacman:
     name: firefox-developer-edition
     state: present
   tags:
-    - firefox-developer-edition
+    - browsers
 
 - name: Install Basilisk
   command: /usr/bin/aura -Ax --noconfirm --needed basilisk-bin
   tags:
     - aura
+    - browsers
+- name: Install PaleMoon
+  pacman:
+    name: palemoon-bin
+    state: present
+  tags:
+    - browsers
 
 - name: Install surfraw
   pacman:
     name: surfraw
     state: present
   tags:
-    - surfraw
+    - browsers
 
 - name: Configure surfraw browser
   lineinfile:
@@ -50,8 +59,7 @@
     regexp: '^def   SURFRAW_graphical_browser	'
     line: 'def   SURFRAW_graphical_browser	/usr/local/bin/browser'
   tags:
-    - surfraw
-    - chooser
+    - browsers
 
 - name: Push surfraw-rofi script
   copy:
@@ -59,5 +67,4 @@
     dest: /usr/local/bin/surfraw-rofi
     mode: 0755
   tags:
-    - surfraw
-    - rofi
+    - browsers
