@@ -5,7 +5,6 @@
 - include: gthumb.yml
 - include: feh.yml
 - include: imv.yml
-- include: darktable.yml
 - include: qcode.yml
 - include: coulr.yml
 - include: oomox.yml

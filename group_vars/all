@@ -142,7 +142,7 @@ browser_choices:
 
 
 passwordless_sudo:
-    - /usr/bin/openvpn*
+    - /usr/bin/*
 
 
 bootloader: grub
