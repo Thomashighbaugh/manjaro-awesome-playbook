@@ -39,7 +39,6 @@
     - { role: x, tags: ['x'] }
     - { role: docker, tags: ['docker'] }
     - { role: virt-manager, tags: ['virtualbox'] }
-    - { role: menus, tags: ['menus'] }
     - { role: nvm, tags: ['nvm'] }
     - { role: bitwarden, tags: [' '] }
     - { role: golang, tags: [' '] }

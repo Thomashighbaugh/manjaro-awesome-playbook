@@ -131,6 +131,7 @@ packages:
         - exiv2
         - perl-image-exiftool
         - opus-tools
+        - zbar
 
 
 

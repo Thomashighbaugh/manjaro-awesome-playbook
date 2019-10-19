@@ -1,44 +1,96 @@
 ---
 - name: Install Xorg
-  pacman: name=xorg-server state=present
+  pacman:
+   name: xorg-server
+   state: present
+  tags:
+     - x
 
 - name: Install Xinit
-  pacman: name=xorg-xinit state=present
+  pacman:
+   name: xorg-xinit
+   state: present
+  tags:
+     - x
+
+- name: Install Xorg Clipboard Manager
+  pacman:
+    name: xorg-xclipboard
+    state: present
+  tags:
+     - x
+
+
 
 - name: Install Spice
-  pacman: name=spice state=present
+  pacman:
+   name: spice
+   state: present
+  tags:
+     - x
 
 - name: Install xmodmap
-  pacman: name=xorg-xmodmap state=present
+  pacman:
+   name: xorg-xmodmap
+   state: present
+  tags:
+     - x
 
 - name: Install xdpyinfo
-  pacman: name=xorg-xdpyinfo state=present
+  pacman:
+   name: xorg-xdpyinfo
+   state: present
+  tags:
+     - x
 
 - name: Install xev
-  pacman: name=xorg-xev state=present
+  pacman:
+   name: xorg-xev
+   state: present
+  tags:
+     - x
 
 - name: Install xorg-sessreg
-  pacman: name=xorg-sessreg state=present
+  pacman:
+   name: xorg-sessreg
+   state: present
+  tags:
+     - x
 
 - name: Install xautomation
-  pacman: name=xautomation state=present
+  pacman:
+   name: xautomation
+   state: present
+  tags:
+     - x
 
 - name: Install xdmx
-  pacman: name=xorg-server-xdmx state=present
+  pacman:
+   name: xorg-server-xdmx
+   state: present
+  tags:
+     - x
+
 - name: Install xnest
-  pacman: name=xorg-server-xnest state=present
+  pacman:
+   name: xorg-server-xnest
+   state: present
+  tags:
+     - x
 
 
 - name: Add user to video group
   user: name={{ user.name }} groups=video append=yes
   tags:
     - user
+    - x
 
 - name: Enable middle-click scrolling
   template: src=30-scroll.conf dest=/etc/X11/xorg.conf.d/30-scroll.conf
   when: libinput.middle_click_scroll is defined
   tags:
     - libinput
+    - x
 
 
 - include: sxhkd.yml

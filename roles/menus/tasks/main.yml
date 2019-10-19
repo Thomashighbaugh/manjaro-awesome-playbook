@@ -1,8 +1,0 @@
----
-- name: Install ROFI
-  pacman:
-    name: rofi
-    state: present
-
-
-

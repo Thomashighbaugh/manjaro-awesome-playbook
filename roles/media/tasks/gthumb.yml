@@ -3,3 +3,4 @@
   pacman: name=gthumb state=present
   tags:
     - gthumb
+    - media

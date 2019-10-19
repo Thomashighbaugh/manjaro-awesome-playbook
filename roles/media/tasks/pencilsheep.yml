@@ -9,3 +9,7 @@
     state: started
 
 - name: Install PencilSheep Using Snap Package Manager
+  snap:
+    name: pencilsheep
+  tags:
+    - media
