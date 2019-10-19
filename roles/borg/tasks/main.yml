@@ -6,8 +6,10 @@
       - borg
       - rclone
     state: present
-
+  tags:
+    - borg
 - name: Install Vorta
   command: /usr/bin/aura -Ax --noconfirm --needed vorta
   tags:
     - aura
+    - borg
