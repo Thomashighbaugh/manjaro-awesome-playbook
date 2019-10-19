@@ -5,24 +5,28 @@
    state: present
  tags:
    - ssh
+
 - name: Push OpenSSH daemon configuration file
   template:
    src: sshd_config.j2
    dest: /etc/ssh/sshd_config
  tags:
   - ssh
+
 - name: Push OpenSSH configuration file
   template:
    src: ssh_config.j2
    dest: /etc/ssh/ssh_config
  tags:
    - ssh
+
 - name: Create OpenSSH systemd unit file directory
   file:
    path: /etc/systemd/system/sshd.socket.d
    state: directory
  tags:
    - ssh
+
 - name: Push OpenSSH socket unit file
   template:
    src: sshd-socket-override.conf.j2
@@ -32,6 +36,7 @@
     - restart sshd
  tags:
    - ssh
+
 - name: Enable and start OpenSSH
   service:
    name: sshd.service
@@ -40,6 +45,7 @@
   when: ssh.enable_sshd == True
  tags:
    - ssh
+
 - name: Disable and stop OpenSSH
   service:
    name: sshd.service
@@ -48,18 +54,21 @@
   when: ssh.enable_sshd == False
  tags:
    - ssh
+
 - name: Install sshfs
   pacman:
    name: sshfs
    state: present
  tags:
    - ssh
+
 - name: Install autossh
   pacman:
    name: autossh
    state: present
  tags:
    - ssh
+
 - name: Copy fuse configuration file
   copy:
    src: fuse.conf
@@ -83,6 +92,7 @@
    group: {{ user.group }}
  tags:
    - ssh
+
 - name: Install user SSH key
   copy:
    src: {{ ssh.user_key }}
@@ -93,6 +103,7 @@
   when: ssh.user_key is defined
  tags:
    - ssh
+
 - name: Install Mosh
   pacman:
    name: mosh
