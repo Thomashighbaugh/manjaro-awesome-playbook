@@ -3,42 +3,59 @@
   pacman:
    name: termite
    state: present
+  tags:
+    - terminals
 
 - name: Install XTerm
   pacman:
     name: termite
     state: present
+  tags:
+    - terminals
+
 
 - name: Install TMux
   pacman:
     name: tmux
     state: present
+  tags:
+    - terminals
+
 
 - name: Install Alacritty
   pacman:
     name: alacritty
     state: present
+  tags:
+    - terminals
 
 - name: Install Kitty
   pacman:
     name: kitty
     state: present
+  tags:
+    - terminals
 
 - name: Install Hyper
   pacman:
     name: hyper
     state: present
+  tags:
+    - terminals
 
 - name: Install Termdown
   pacman:
     name: termdown
     state: present
+  tags:
+    - terminals
 
-
-- name: Install Screen
+- name: Install TMux
   pacman:
-    name: screen
+    name: tmux
     state: present
+  tags:
+    - terminals
 
 - include: p10k.yml
 
