@@ -1,5 +1,0 @@
----
-- name: Install Alt Tab
-  command: /usr/bin/aura -Ax --noconfirm --needed alttab-git
-
-

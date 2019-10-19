@@ -135,7 +135,8 @@ packages:
 
 
 browser_choices:
-    - firefox-developer-edition
+    - firefox-developer-edition -P work
+    - falkon
     - firefox -P default
     - firefox -P work
     - chromium
@@ -147,17 +148,12 @@ passwordless_sudo:
 
 bootloader: grub
 
-fingerprint: False
 
 
 localtime:
     run_on: trusted
 
-unbound:
-    tls: True
-    nameservers:
-        - 1.1.1.1@853  # Cloudflare
-        - 9.9.9.9@853  # Quad9
+
 
 bluetooth:
     disable: False
@@ -175,7 +171,7 @@ hostsctl:
 
 
 libinput:
-    middle_click_scroll: 12
+    middle_click_scroll: 8
     button_mapping: "1 2 3 4 5 6 7 8 9 10 11 2"
 
 display_manager: lightdm
@@ -183,4 +179,3 @@ display_manager: lightdm
 units:
     run_on: trusted
 
-kernel_parameters: "quiet consoleblank=60 i915.enable_psr=2"

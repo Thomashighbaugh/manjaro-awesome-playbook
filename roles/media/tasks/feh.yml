@@ -3,4 +3,5 @@
   pacman: name=feh state=present
   tags:
     - feh
+    - media
 

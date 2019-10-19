@@ -1,6 +1,4 @@
 ---
-- include: altTab.yml
-
 - name: Install ROFI
   pacman:
     name: rofi

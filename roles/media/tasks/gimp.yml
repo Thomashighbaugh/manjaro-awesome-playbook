@@ -3,6 +3,7 @@
   pacman: name=poppler-glib state=present
   tags:
     - gimp
+    - media
 
 - name: Install GIMP
   pacman:
@@ -12,8 +13,10 @@
     state: present
   tags:
     - gimp
+    - media
 
 - name: Install GIMP raw support
   pacman: name=gimp-nufraw state=present
   tags:
     - gimp
+    - media
