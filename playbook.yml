@@ -40,9 +40,9 @@
     - { role: docker, tags: ['docker'] }
     - { role: virt-manager, tags: ['virtualbox'] }
     - { role: nvm, tags: ['nvm'] }
-    - { role: bitwarden, tags: [' '] }
-    - { role: golang, tags: [' '] }
-    - { role: gnome-keyring, tags: [' '] }
+    - { role: bitwarden, tags: ['bitwarden'] }
+    - { role: golang, tags: ['golang'] }
+    - { role: gnome-keyring, tags: ['gnome-keyring'] }
 
   vars_prompt:
     - name: user_password
