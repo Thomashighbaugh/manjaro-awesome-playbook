@@ -9,16 +9,19 @@
       - virt-manager
       - tigervnc
       - virtualbox-ext-vnc
-
     state: present
+  tags:
+    - virtualbox
 
 - name: Install VirtualBox extensions
   command: /usr/bin/aura -Ax --noconfirm --needed virtualbox-ext-oracle
   tags:
     - aura
+    - virtualbox
 
 - name: Add the user to vboxusers group
   user: name={{ user.name }} groups=vboxusers append=yes
   tags:
     - user
+    - virtualbox
 
