@@ -3,6 +3,8 @@
   pacman:
     name: "{{ packages.filesystem_packages }}"
     state: present
+  tags:
+    - filesystems
 
 - name: Install File Managers
   pacman:
@@ -11,6 +13,8 @@
       - ranger
       - manjaro-ranger-settings
     state: present
+  tags:
+    - filesystems
 
 
 - name: Install Disk Utilities
@@ -25,7 +29,10 @@
       - mediainfo
       - pngcrush
       - mutagen
+      - trash-cli
     state: present
+  tags:
+    - filesystems 
 
 
 
