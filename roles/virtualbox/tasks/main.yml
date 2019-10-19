@@ -5,7 +5,7 @@
       - net-tools
       - virtualbox
       - virtualbox-guest-iso
-      - virtualbox-host-dkms
+      - linux-latest-virtualbox-host-modules
       - virt-manager
       - tigervnc
       - virtualbox-ext-vnc

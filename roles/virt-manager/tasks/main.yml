@@ -10,4 +10,9 @@
       - vagrant
       - virglrenderer
       - virt-install
-      -
+      - avfs
+      - gnome-boxes
+      - gvfs-google
+      - virt-viewer
+      - virtualgl
+    state: present

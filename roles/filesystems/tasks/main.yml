@@ -9,6 +9,7 @@
     name:
       - doublecmd-qt5
       - ranger
+      - manjaro-ranger-settings
     state: present
 
 
@@ -24,6 +25,7 @@
       - mediainfo
       - pngcrush
       - mutagen
+    state: present
 
 
 
