@@ -1,11 +1,22 @@
 ---
 - name: Install mpv
-  pacman: name=mpv state=present
+  pacman:
+   name: mpv
+   state: present
+ tags:
+   - mpv
 
 - name: Install Ario
-  pacman: name=ario state=present
+  pacman:
+   name: ario
+   state: present
+ tags:
+   - mpv
 
 - name: Install RhythmBox
-  pacman: name=rhythmbox state=present
-
+  pacman:
+   name: rhythmbox
+   state: present
+ tags:
+   - mpv
 

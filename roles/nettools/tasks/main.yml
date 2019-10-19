@@ -5,6 +5,7 @@
    state: present
  tags:
    - nettools
+
 - name: Install MTR
   pacman:
    name: mtr
