@@ -3,6 +3,8 @@
   pacman:
     name: "{{ editors }}"
     state: present
+  tags:
+    - editors
 
 - include: jetbrains.yml
 - include: texworks.yml

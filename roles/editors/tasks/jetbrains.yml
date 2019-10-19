@@ -3,4 +3,4 @@
   command: /usr/bin/aura -Ax --noconfirm --needed jetbrains-toolbox
   tags:
     - aura
-    - jetbrains
+    - editors
