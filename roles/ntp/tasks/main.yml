@@ -1,17 +1,28 @@
 ---
 - name: Install chrony
-  pacman: name=chrony state=present
-
+  pacman:
+   name: chrony
+   state: present
+ tags:
+   - ntp
 - name: Install chrony networkmanager dispatcher
   command: /usr/bin/aura -Ax --noconfirm --needed networkmanager-dispatcher-chrony
   tags:
     - aura
+    - ntp
     - networkmanager
 
 - name: Push chrony configuration file
   copy: src=chrony.conf dest=/etc/chrony.conf
   notify:
     - restart chrony
+  tags:
+    - ntp
 
 - name: Enable and start chrony
-  service: name=chronyd.service enabled=yes state=started
+  service:
+   name: chronyd.service
+   enabled: yes
+   state: started
+  tags:
+    - ntp
