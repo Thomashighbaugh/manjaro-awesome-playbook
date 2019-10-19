@@ -1,3 +1,4 @@
+---
 - name: Install Coulr
   command: /usr/bin/aura -Ax --noconfirm --needed coulr
   tags:

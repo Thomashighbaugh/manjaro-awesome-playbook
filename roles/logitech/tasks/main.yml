@@ -3,6 +3,8 @@
   group:
       name: plugdev
       state: present
+ tags:
+   - logitech
 
 - name: Add {{ user.name }} to plugdev group
   user:
@@ -11,8 +13,11 @@
       append: yes
   tags:
     - user
+    - logitech
 
 - name: Install Solaar
   pacman:
       name: solaar
       state: present
+ tags:
+   - logitech

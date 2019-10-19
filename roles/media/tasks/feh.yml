@@ -1,6 +1,8 @@
 ---
 - name: Install feh
-  pacman: name=feh state=present
+  pacman:
+   name: feh
+   state: present
   tags:
     - feh
     - media

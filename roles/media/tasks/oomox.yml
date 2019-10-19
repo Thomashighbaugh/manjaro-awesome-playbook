@@ -1,3 +1,4 @@
+---
 - name: Install Oomox
   command: /usr/bin/aura -Ax --noconfirm --needed oomox
   tags:

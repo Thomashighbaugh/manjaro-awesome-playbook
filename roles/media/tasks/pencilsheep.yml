@@ -3,6 +3,7 @@
   pacman:
     name: snapd
     state: present
+
 - name: Start Snap service
   service:
     name: snapd.service
