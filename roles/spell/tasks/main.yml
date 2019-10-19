@@ -6,7 +6,7 @@
       - hunspell-en_US
     state: present
   tags:
-    - hunspell
+    - spell
 
 - name: Install aspell
   pacman:
@@ -15,4 +15,4 @@
       - aspell-en
     state: present
   tags:
-    - aspell
+    - spell
