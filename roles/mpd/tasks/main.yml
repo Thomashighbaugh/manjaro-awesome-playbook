@@ -1,20 +1,42 @@
 ---
 - name: Install mpd
-  pacman: name=mpd state=present
+  pacman:
+   name: mpd
+   state: present
+ tags:
+   - mpd
 
 - name: Install mpc
-  pacman: name=mpc state=present
-
+  pacman:
+   name: mpc
+   state: present
+ tags:
+   - mpd
 
 - name: Install mpc
-  pacman: name=mpc state=present
+  pacman:
+   name: mpc
+   state: present
+ tags:
+   - mpd
 
 - name: Install ncmpcpp
-  pacman: name=ncmpcpp state=present
+  pacman:
+   name: ncmpcpp
+   state: present
+ tags:
+   - mpd
 
 - name: Install Sonata
-  pacman: name=sonata state=present
+  pacman:
+   name: sonata
+   state: present
+ tags:
+   - mpd
 
 - name: Install LibMPD
-  pacman: name=libmpd state=present
-
+  pacman:
+   name: libmpd
+   state: present
+ tags:
+   - mpd
