@@ -7,4 +7,4 @@ git clone https://github.com/powerline/fonts
 
 sudo ./fonts/install.sh
 
-sudo fc-cache -rf
+sudo fc-cache -rvf
