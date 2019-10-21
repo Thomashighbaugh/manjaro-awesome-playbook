@@ -41,6 +41,10 @@
         dest=/etc/fonts/conf.d/10-hinting-slight.conf
         state=link
 
-- name: Push font substitutions
-  copy: src=local.conf dest=/etc/fonts/local.conf
 
+- name: Install Powerline Fonts Repo
+  script: powerline.sh
+  become: yes
+  become_user: "{{ user.name }}"
+tags:
+  - fonts
