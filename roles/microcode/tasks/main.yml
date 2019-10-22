@@ -5,5 +5,5 @@
    state: present
   notify:
     - rebuild grub
- tags:
+  tags:
    - microcode

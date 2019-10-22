@@ -1,6 +1,7 @@
+---
 - name: Install Powerlevel10k
   script: p10k.sh
   become: yes
   become_user: "{{ user.name }}"
-tags:
+  tags:
   - terminals
