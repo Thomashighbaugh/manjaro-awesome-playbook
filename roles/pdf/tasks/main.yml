@@ -10,6 +10,6 @@
   pacman:
     name: zathura
     state: present
- tags:
+  tags:
    - pdf
 

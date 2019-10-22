@@ -3,7 +3,7 @@
   pacman:
    name: chrony
    state: present
- tags:
+  tags:
    - ntp
 - name: Install chrony networkmanager dispatcher
   command: /usr/bin/aura -Ax --noconfirm --needed networkmanager-dispatcher-chrony

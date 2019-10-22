@@ -3,7 +3,7 @@
   pacman:
    name: alsa-utils
    state: present
- tags:
+  tags:
    - sound
 
 - name: Install PulseAudio
@@ -13,7 +13,7 @@
       - pulseaudio-alsa
       - pavucontrol
     state: present
- tags:
+  tags:
    - sound
 
 - name: Switch output to newly connected devices
@@ -21,14 +21,14 @@
    dest: /etc/pulse/default.pa
    state: present
    line: "load-module module-switch-on-connect"
- tags:
+  tags:
    - sound
 
 - name: Install pasystray
   pacman:
    name: pasystray
    state: present
- tags:
+  tags:
    - sound
 
 - name: Install pulseaudio-ctl
