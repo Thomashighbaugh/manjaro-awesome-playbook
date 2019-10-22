@@ -16,7 +16,7 @@
       src: connectivity.conf.j2
       dest: /etc/NetworkManager/conf.d/20-connectivity.conf
   when: network.conn_check is defined
- tags:
+  tags:
    - networkmanager
 
 - name: Enable and start NetworkManager
@@ -24,7 +24,7 @@
       name: NetworkManager.service
       enabled: yes
       state: started
- tags:
+  tags:
    - networkmanager
 
 - name: Enable and start NetworkManager dispatcher
@@ -32,5 +32,5 @@
       name: NetworkManager-dispatcher.service
       enabled: yes
       state: started
- tags:
+  tags:
    - networkmanager

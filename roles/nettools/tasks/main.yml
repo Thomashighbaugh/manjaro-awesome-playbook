@@ -3,70 +3,70 @@
   pacman:
    name: openvpn
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install MTR
   pacman:
    name: mtr
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install net-tools
   pacman:
    name: net-tools
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install bind-tools
   pacman:
    name: bind-tools
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install whois
   pacman:
    name: whois
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install netcat
   pacman:
    name: gnu-netcat
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install lftp
   pacman:
    name: lftp
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install nmap
   pacman:
    name: nmap
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install tcpdump
   pacman:
    name: tcpdump
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install sshuttle
   pacman:
    name: sshuttle
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install pdsh
@@ -79,7 +79,7 @@
   pacman:
    name: wireshark-qt
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Add user to wireshark group
@@ -92,19 +92,19 @@
   pacman:
    name: socat
    state: present
- tags:
+  tags:
    - nettools
 
 - name: Install nethogs
   pacman:
    name: nethogs
    state: present
- tags:
+  tags:
   - nettools
 
 - name: Install speedtest-cli
   pacman:
    name: speedtest-cli
    state: present
- tags:
+  tags:
    - nettools
