@@ -3,33 +3,33 @@
   pacman:
    name: udisks2
    state: present
- tags:
+  tags:
     - udisks
 
 - name: Configure auto mount
   template:
    src: 10-udisks.rules.j2
    dest: /etc/udev/rules.d/10-udisks.rules
- tags:
+  tags:
    - udisks
 
 - name: Verify /media exists
   file:
    path: /media
    state: directory
- tags:
+  tags:
    - udisks
 
 - name: Configure mount location
   template:
    src: 99-udisks2.rules.j2
    dest: /etc/udev/rules.d/99-udisks2.rules
- tags:
+  tags:
    - udisks
 
 - name: Install udiskie
   pacman:
    name: udiskie
    state: present
- tags:
+  tags:
    - udisks
