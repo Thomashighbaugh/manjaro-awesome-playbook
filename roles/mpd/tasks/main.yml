@@ -3,40 +3,40 @@
   pacman:
    name: mpd
    state: present
- tags:
+  tags:
    - mpd
 
 - name: Install mpc
   pacman:
    name: mpc
    state: present
- tags:
+  tags:
    - mpd
 
 - name: Install mpc
   pacman:
    name: mpc
    state: present
- tags:
+  tags:
    - mpd
 
 - name: Install ncmpcpp
   pacman:
    name: ncmpcpp
    state: present
- tags:
+  tags:
    - mpd
 
 - name: Install Sonata
   pacman:
    name: sonata
    state: present
- tags:
+  tags:
    - mpd
 
 - name: Install LibMPD
   pacman:
    name: libmpd
    state: present
- tags:
+  tags:
    - mpd

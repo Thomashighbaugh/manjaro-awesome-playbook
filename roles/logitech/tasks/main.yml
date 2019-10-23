@@ -3,7 +3,7 @@
   group:
       name: plugdev
       state: present
- tags:
+  tags:
    - logitech
 
 - name: Add {{ user.name }} to plugdev group

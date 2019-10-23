@@ -12,7 +12,7 @@
    regexp: ^SystemGroup
    state: present
    line: "auth       optional     pam_gnome_keyring.so"
- tags:
+  tags:
    - gnome-keyring
 
 - name: Add Session Line to pam.d

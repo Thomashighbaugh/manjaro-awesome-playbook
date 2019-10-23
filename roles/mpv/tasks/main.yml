@@ -3,20 +3,20 @@
   pacman:
    name: mpv
    state: present
- tags:
+  tags:
    - mpv
 
 - name: Install Ario
   pacman:
    name: ario
    state: present
- tags:
+  tags:
    - mpv
 
 - name: Install RhythmBox
   pacman:
    name: rhythmbox
    state: present
- tags:
+  tags:
    - mpv
 

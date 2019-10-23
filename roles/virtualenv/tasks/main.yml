@@ -15,7 +15,7 @@
 
 - name: Add user to system environment group
   user:
-   name: {{ user.name }}
+   name: "{{ user.name }}"
    groups: env
    append: yes
   tags:
