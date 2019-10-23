@@ -3,7 +3,7 @@
   pacman:
    name: freetype2
    state: present
- tags:
+  tags:
    - fonts
 
 - name: Install Font Awesome 4
@@ -16,14 +16,14 @@
   pacman:
    name: cairo
    state: present
- tags:
+  tags:
    - fonts
 
 - name: Install fontconfig
   pacman:
    name: fontconfig
    state: present
- tags:
+  tags:
    - fonts
 
 - name: Enable LCD filter
@@ -46,5 +46,5 @@
   script: powerline.sh
   become: yes
   become_user: "{{ user.name }}"
-tags:
+  tags:
   - fonts

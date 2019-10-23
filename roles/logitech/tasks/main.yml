@@ -19,5 +19,5 @@
   pacman:
       name: solaar
       state: present
- tags:
+  tags:
    - logitech

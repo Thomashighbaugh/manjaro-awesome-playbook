@@ -3,7 +3,7 @@
   pacman:
    name: feh
    state: present
-  tags:
+   tags:
     - feh
     - media
 
